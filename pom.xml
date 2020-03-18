@@ -22,6 +22,19 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
+
+
+<!--		<dependency>-->
+<!--			<groupId>com.h2database</groupId>-->
+<!--			<artifactId>h2</artifactId>-->
+<!--			<scope>runtime</scope>-->
+<!--		</dependency>-->
+
+
+
+
+
 		<dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -93,11 +106,30 @@
 					<url>jdbc:mysql://localhost:3306/demo?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT</url>
                     <user>root</user>
                     <password>123456</password>
-                    <driver>com.mysql.jdbc.Driver</driver>
+                    <driver>com.mysql.cj.jdbc.Driver</driver>
                 </configuration>
-                <dependencies>
-                    
-                </dependencies>
+
+
+<!--				<plugin>-->
+<!--					<groupId>org.flywaydb</groupId>-->
+<!--					<artifactId>flyway-maven-plugin</artifactId>-->
+<!--					<version>6.3.0</version>-->
+<!--					<configuration>-->
+<!--						<url>jdbc:h2:~/Downloads/litesmile</url>-->
+<!--						<user>sa</user>-->
+<!--						<password>123</password>-->
+<!--					</configuration>-->
+<!--					<dependencies>-->
+<!--						<dependency>-->
+<!--							<groupId>com.h2database</groupId>-->
+<!--							<artifactId>h2</artifactId>-->
+<!--							<version>1.4.200</version>-->
+<!--						</dependency>-->
+<!--					</dependencies>-->
+<!--				</plugin>-->
+
+
+
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
