@@ -1,0 +1,1 @@
+alter table question add gmt_modified bigint;
