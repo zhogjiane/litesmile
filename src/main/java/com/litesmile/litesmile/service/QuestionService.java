@@ -39,12 +39,7 @@ public class QuestionService{
 	   if (page > paginationDTO.getTotalPage())
 	       page = paginationDTO.getTotalPage();
 
-
-
 	    Integer offset = size * (page - 1);
-
-
-
 
         List<Question> questions = questionMapper.list(offset,size);
         List<QuestionDTO> questionDTOList = new ArrayList<>();
