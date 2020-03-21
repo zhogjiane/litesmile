@@ -25,7 +25,10 @@ body{
 
 
 .timetext{
-    font: size 12px;
+    font-size: 12px;
     font-weight: normal;
     color: #999
+}
+.profile .section{
+    margin-top: 12px;
 }
